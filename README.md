@@ -13,8 +13,8 @@ This project is part of the Parallel Programming course (2023-24) and focuses on
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/luciarevaliente/Kmeans_Parallel_Programming_using_OpenMP_OpenACC_CUDA.git
-    cd Kmeans_Parallel_Programming_using_OpenMP_OpenACC_CUDA
+    git clone https://github.com/luciarevaliente/Kmeans_Parallel_Programming_using_OpenMP_OpenACC_CUDA_MPI.git
+    cd Kmeans_Parallel_Programming_using_OpenMP_OpenACC_CUDA_MPI
     ```
 
 2. **Compile the code**:
