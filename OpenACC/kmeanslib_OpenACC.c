@@ -196,7 +196,7 @@ void kmeans(uint8_t k, cluster* centroides, uint32_t num_pixels, rgb* pixels){
       uint8_t condition, changed, closest;
       uint32_t i, j, random_num;
 
-      //Reservem memòria
+      //Reservem memÃ²ria
       uint32_t* media_r = malloc(k * sizeof(uint32_t));
       uint32_t* media_g = malloc(k * sizeof(uint32_t));
       uint32_t* media_b = malloc(k * sizeof(uint32_t));
@@ -301,7 +301,7 @@ void kmeans(uint8_t k, cluster* centroides, uint32_t num_pixels, rgb* pixels){
           i++;
       } while(condition);
       
-      // Alliberem la memòria reservada previament
+      // Alliberem la memÃ²ria reservada previament
       free(media_r);
       free(media_g);
       free(media_b);
