@@ -1,0 +1,28 @@
+#!/bin/bash
+#SBATCH --job-name=mpi_exec
+#SBATCH -N 1 # number of nodes
+#SBATCH -n 8
+#SBATCH --distribution=cyclic
+#SBATCH --partition=nodo.q
+
+module load openmpi/4.1.1
+module load gcc/12.1.1
+
+if [ "$1" = "-seq" ]; then
+        ############################################
+        ### Compile Sequential Laplace laplace.c ###
+        ############################################
+        gcc -Ofast laplace.c -o executable -lm
+ 
+        ./executable $2 $3 $4
+
+elif  [ "$1" = "-par" ]; then
+        ############################################
+        ### Compile MPI Laplace laplace_mpi.c ###
+        ############################################
+
+        mpicc -Ofast laplace_mpi.c -o executable -lm
+        mpirun -n $2 ./executable $3 $4 $5
+fi
+
+rm executable
