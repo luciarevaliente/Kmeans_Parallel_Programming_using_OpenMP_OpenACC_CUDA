@@ -22,10 +22,7 @@ This project is part of the Parallel Programming course (2023-24) and focuses on
     make
     ```
 
-3. **Run the K-means algorithm**:
-    ```bash
-    ./kmeans input_image.bmp
-    ```
+3. **Run the K-means algorithm**
 
 ## Project Description
 
