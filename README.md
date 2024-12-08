@@ -41,6 +41,7 @@ Final project for the Parallel Programming course (2023-24). The objective is to
 
 - **OpenMP**: Utilizes shared memory parallelism to distribute the workload across multiple CPU cores. This involves parallelizing loops and tasks to minimize execution time.
 - **OpenACC/CUDA**: Uses accelerators such as GPUs to offload compute-intensive parts of the algorithm. OpenACC provides a high-level approach to parallelization, while CUDA allows for fine-grained control over GPU execution.
+- **MPI:** Uses distributed memory parallelism to enable communication between multiple processors across different nodes, allowing the algorithm to scale efficiently on large clusters.
 
 ## Contributions
 
