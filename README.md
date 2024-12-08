@@ -1,4 +1,5 @@
-# Parallel K-means Clustering
+
+# K-means Parallel Programming using OpenMP, OpenACC, CUDA, and MPI
 
 This project is part of the Parallel Programming course (2023-24) and focuses on implementing the K-means clustering algorithm for pixel clustering in bitmap images using parallel programming techniques.
 
@@ -12,8 +13,8 @@ This project is part of the Parallel Programming course (2023-24) and focuses on
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/luciarevaliente/PP_GED_Practica_Kmeans_23_24.git
-    cd PP_GED_Practica_Kmeans_23_24
+    git clone https://github.com/luciarevaliente/Kmeans_Parallel_Programming_using_OpenMP_OpenACC_CUDA.git
+    cd Kmeans_Parallel_Programming_using_OpenMP_OpenACC_CUDA
     ```
 
 2. **Compile the code**:
@@ -28,20 +29,21 @@ This project is part of the Parallel Programming course (2023-24) and focuses on
 
 ## Project Description
 
-Final project for the Parallel Programming course (2023-24). The objective is to design and implement parallel versions of the K-means clustering algorithm to reduce the number of colors in a bitmap image. The project involves using different parallel programming approaches, including shared memory (OpenMP) and accelerators (OpenACC/CUDA).
+Final project for the Parallel Programming course (2023-24). The objective is to design and implement parallel versions of the K-means clustering algorithm to reduce the number of colors in a bitmap image. The project involves using different parallel programming approaches, including shared memory (OpenMP), accelerators (OpenACC/CUDA), and distributed memory (MPI).
 
 ### Key Features
 
 - **K-means Algorithm**: An unsupervised machine learning algorithm used for clustering data points.
 - **Pixel Clustering**: Application of K-means to group pixels in an image based on their RGB values.
-- **Parallel Implementations**: Development of parallel versions using OpenMP and OpenACC/CUDA to improve performance.
+- **Parallel Implementations**: Development of parallel versions using OpenMP, OpenACC, CUDA, and MPI to improve performance.
 - **Performance Analysis**: Evaluation of the speedup and efficiency of the parallel implementations.
 
 ### Parallelization Methods
 
 - **OpenMP**: Utilizes shared memory parallelism to distribute the workload across multiple CPU cores. This involves parallelizing loops and tasks to minimize execution time.
-- **OpenACC/CUDA**: Uses accelerators such as GPUs to offload compute-intensive parts of the algorithm. OpenACC provides a high-level approach to parallelization, while CUDA allows for fine-grained control over GPU execution.
-- **MPI:** Uses distributed memory parallelism to enable communication between multiple processors across different nodes, allowing the algorithm to scale efficiently on large clusters.
+- **OpenACC**: Provides a high-level approach to parallelization, allowing code to be offloaded to GPUs with minimal changes.
+- **CUDA**: Offers fine-grained control over GPU execution, enabling significant acceleration of compute-intensive parts of the algorithm.
+- **MPI**: Uses distributed memory parallelism to enable communication between multiple processors across different nodes, allowing the algorithm to scale efficiently on large clusters.
 
 ## Contributions
 
